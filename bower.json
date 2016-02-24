@@ -1,0 +1,12 @@
+{
+  "name": "open-payments-lrvl-fdtn",
+  "private": "true",
+  "dependencies": {
+    "angular": "latest",
+    "angular-ui-router": "latest",
+    "angular-chart.js": "^0.8.8",
+    "angular-animate": "latest",
+    "angular-foundation": "latest",
+    "file-saver.js": "latest"
+  }
+}

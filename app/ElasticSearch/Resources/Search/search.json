@@ -1,0 +1,8 @@
+{
+	"multi_match": {
+			"query": null,
+			"type": "most_fields",
+			"fields": ["recipient_city^5","payment_form^3","payment_type^3","physician_first_name^2","physician_last_name^2","physician_type^3","gpo_name_orig^2","gpo_name"],
+			"tie_breaker": 0.3
+		}
+}

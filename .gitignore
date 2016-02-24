@@ -1,0 +1,11 @@
+/vendor
+/node_modules
+/public/js
+/public/views
+/.idea
+Homestead.yaml
+Homestead.json
+.env
+.env.example
+app.css
+*.map

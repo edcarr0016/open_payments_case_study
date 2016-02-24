@@ -1,0 +1,62 @@
+{
+	"open_payments": {
+		"properties": {
+			"payment_type": {
+				"type": "string",
+				"index": "not_analyzed"
+			},
+			"payment_form": {
+				"type": "string",
+				"index": "not_analyzed"
+			},
+			"payment_recipient_indicator": {
+				"type": "string",
+				"index": "not_analyzed"
+			},
+			"payment_date": {
+				"type": "date",
+				"format": "MMMM dd yyyy||MMMM dd||MMMM yyyy"
+			},
+			"product_name": {
+				"type": "string",
+				"analyzer": "analyzer_en"
+			},
+			"gpo_name_orig": {
+				"type": "string",
+				"analyzer": "analyzer_en"
+			},
+			"gpo_name": {
+				"type": "string",
+				"analyzer": "analyzer_en"
+			},
+			"contextual_information": {
+				"type": "string",
+				"analyzer": "analyzer_en"
+			},
+			"product_indicator": {
+				"type": "string",
+				"index": "not_analyzed"
+			},
+			"physician_first_name": {
+				"type": "string",
+				"index": "not_analyzed"
+			},
+			"physician_last_name": {
+				"type": "string",
+				"index": "not_analyzed"
+			},
+			"physician_type": {
+				"type": "string",
+				"index": "not_analyzed"
+			},
+			"physician_specialty": {
+				"type": "string",
+				"analyzer": "analyzer_en"
+			},
+			"recipient_city": {
+				"type": "string",
+				"index": "not_analyzed"
+			}
+		}
+	}
+}

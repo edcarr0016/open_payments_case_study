@@ -1,0 +1,47 @@
+
+<div class="top-bar">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Open Payments</li>
+        </ul>
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="large-10 large-centered columns">
+        <table>
+            <thead>
+            <tr>
+                <th>
+                    <div class="row">
+                        <div class="large-9 columns">
+                            <input class="align-left" type="text" placeholder="Type to search..." ng-model="query" ng-change="search()" ng-focus="focus=true" ng-blur="focus=false">
+                        </div>
+                        <div class="large-3 large-text-right columns">
+                            <button ng-class="{'hollow button': hits.length > 0, 'secondary hollow button': hits.length == 0}"
+                            ng-disabled="hits.length < 1" ng-click="download()">Export Data</button>
+                        </div>
+                    </div>
+
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="hit in hits" ng-show="hits.length > 0">
+                <td><p ng-bind-html="hit"></p></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="large-10 large-centered columns">
+        <div data-line-chart datadump="chart.typeSummary"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="large-10 large-centered columns">
+        <div data-radar-chart datadump="chart.typeAndMonthSummary"></div>
+    </div>
+</div>
+
